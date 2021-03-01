@@ -4,7 +4,7 @@ Carousel / Slider - UI component made in React.
 
 Link: [https://golgariet.github.io/carousel/](https://golgariet.github.io/carousel/)
 
-This project is a clean WEBPACK/BABEL release of my previous [https://github.com/Golgariet/infinite-slider-demo/tree/master](work) that is bootstrapped with create-react-app. Ready for production if necessary.
+This project is a clean WEBPACK/BABEL release of my previous [work](https://github.com/Golgariet/infinite-slider-demo/tree/master) that is bootstrapped with create-react-app. Ready for production if necessary.
 
 ## Usage
 
