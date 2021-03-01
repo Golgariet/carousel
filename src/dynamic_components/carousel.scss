@@ -184,8 +184,8 @@ input:checked + .switcher:before {
       height: 3vw;
       position: relative;
       opacity: 0.65;
-      border-bottom: 3px solid #fff;
-      border-left: 3px solid #fff;
+      border-bottom: 5px solid rgb(81, 230, 12);
+      border-left: 5px solid rgb(81, 230, 12);
     }
 
     &:hover {
@@ -200,7 +200,7 @@ input:checked + .switcher:before {
       left: 0;
       padding-left: 12px;
 
-      span {
+      .up {
         transform: rotate(45deg);
       }
     }
@@ -209,7 +209,7 @@ input:checked + .switcher:before {
       right: 0;
       padding-right: 12px;
 
-      span {
+      .down {
         transform: rotate(-135deg);
       }
     }
@@ -291,43 +291,41 @@ input:checked + .switcher:before {
     @media only screen and (max-width: $bp-outdated) {
       width: 120%;
     }
+  }
+}
 
-    ul {
-      list-style: none;
-      padding: 0;
-      //margin: 0;
-      display: flex;
-      justify-content: center;
-      height: 30px;
-      // top: -30px;
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 30px;
 
-      li {
-        width: 1%;
-        box-sizing: border-box;
-        height: inherit;
-        position: relative; // relative
+  li {
+    width: 1%;
+    box-sizing: border-box;
+    height: inherit;
+    position: relative; // relative
 
-        &:not(:last-of-type) {
-          margin-right: 5%;
-        }
+    &:not(:last-of-type) {
+      margin-right: 5%;
+    }
 
-        button {
-          border: 2px solid #fff;
-          border-radius: 15px;
-          outline: none;
-          position: absolute;
-          top: 0;
-          left: 0;
-          background-color: rgba(0, 0, 0, 0.2);
-          width: 20px;
-          height: 20px;
-          cursor: pointer;
-          transition: background-color 300ms ease;
+    button {
+      border: 2px solid #fff;
+      border-radius: 15px;
+      outline: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      transition: background-color 300ms ease;
 
-          &.active {
-            background-color: rgba(138, 212, 235, 0.95);
-          }
-        }
+      &.active {
+        background-color: rgba(138, 212, 235, 0.95);
       }
     }
   }

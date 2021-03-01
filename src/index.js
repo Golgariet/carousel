@@ -1,11 +1,11 @@
 require("file-loader?name=[name].[ext]!./index.html");
 import React from "react";
 import ReactDOM from "react-dom";
-import Slider from "./dynamic_components/Slider";
+import Carousel from "./dynamic_components/Carousel";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Slider />
+    <Carousel />
   </React.StrictMode>,
   document.getElementById("root")
 );

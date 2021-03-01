@@ -1,12 +1,8 @@
 import React from "react";
-import "./slider.scss";
+import "./carousel.scss";
 
 // var data = [
-//   { id: 1, itemNumber: "Item 1", text: "Uno" },
-//   { id: 2, itemNumber: "Item 2", text: "Dos" },
-//   { id: 3, itemNumber: "Item 3", text: "Tres" },
-//   { id: 4, itemNumber: "Item 4", text: "Cuatro" },
-//   { id: 5, itemNumber: "Item 5", text: "Cinco" },
+// {anything you can post here for HTML content.}
 // ];
 
 function Card(props) {
@@ -18,8 +14,8 @@ function Card(props) {
       }}
     >
       <div style={styles.caption}>
-        <p style={styles.text_main}>Welcome:</p>
-        {/* <p style={styles.text_sub}>{props.city_name}</p> */}
+        {/* <p style={styles.text_main}>Welcome:</p> */}
+        <p style={styles.text_sub}>{props.city_name}</p>
         {/* {data.map(function (data) {
           return <h2 style={styles.text_sub}>{props.city_name}</h2>;
         })} */}
@@ -36,25 +32,28 @@ function Card(props) {
 }
 
 const styles = {
-  text_main: {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(20%, 35%)",
-    zIndex: "99999",
-    height: "50%",
-    width: "50%",
-    fontSize: "4vw",
-    textTransform: "uppercase",
-    letterSpacing: "2.5px",
-    textAlign: "justify",
-  },
+  // text_main: {
+  // position: "absolute",
+  // top: "50%",
+  // left: "50%",
+  // transform: "translate(20%, 35%)",
+  // zIndex: "99999",
+  // height: "50%",
+  // width: "50%",
+  // fontSize: "3vw",
+  // textTransform: "uppercase",
+  // letterSpacing: "2.5px",
+  // textAlign: "justify",
+  // },
 
   text_sub: {
     position: "absolute",
     top: "50%",
     left: "50%",
-    transform: "translate(66%, 70%)",
+    textAlign: "center",
+    marginLeft: "auto",
+    marginRight: "auto",
+    transform: "translate(50%, 80%)",
     zIndex: "99999",
     height: "50%",
     width: "50%",
@@ -73,13 +72,6 @@ const styles = {
     backgroundSize: "cover",
     backgroundPosition: "center",
     userSelect: "none",
-
-    // userDrag: "none",
-    // userSelect: "none",
-    // MozUserSelect: "none",
-    // WebkitUserSelect: "none",
-    // WebkitUserDrag: "none",
-    // msUserSelect: "none",
   },
 
   image: {
@@ -92,7 +84,7 @@ const styles = {
     userSelect: "none",
     userDrag: "none",
 
-    // WebkitUserDrag: "none",
+    // WebkitUserDrag: "none", - Impossible drag for PC
   },
 
   caption: {
@@ -102,15 +94,3 @@ const styles = {
 };
 
 export default React.memo(Card);
-
-// 1) draggable="false" , draggable="true" - DONE
-// 2) Text Design
-// 3) bug fixes
-// 4) Webpack and clean React app - DONE
-// 5) labels on buttons - DONE
-// 6) BEM Nesting
-// 7) Upload to github with github pages
-
-// Even the slightest 1mm drag changes the active image. Consider preventing such behaviour.
-
-// Buttons and other elements are not accessible, they don’t have any labels for people who don’t see well.

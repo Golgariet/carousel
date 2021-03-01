@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Card from "./Card";
-import "./slider.scss";
+import "./carousel.scss";
 import i1 from "./assets/game2.jpg";
 import i2 from "./assets/game1.jpg";
 import i3 from "./assets/game3.jpg";
@@ -12,7 +12,7 @@ import TouchHandler from "./TouchHandler";
 const IMG_DATA = [i1, i2, i3, i4, i5];
 let lastPos = 0;
 
-class Slider extends Component {
+class Carousel extends Component {
   constructor(props) {
     super(props);
 
@@ -271,14 +271,14 @@ class Slider extends Component {
           direction="left"
           onClick={() => this.goLeftFn()}
         >
-          <span />
+          <span className="up" />
         </button>
         <button
           className="slide__button slide__button--right"
           direction="right"
           onClick={() => this.goRightFn()}
         >
-          <span />
+          <span className="down" />
         </button>
         <div
           ref={(reference) => (this.viewPort = reference)}
@@ -374,4 +374,4 @@ const styles = {
   },
 };
 
-export default Slider;
+export default Carousel;

@@ -1,32 +1,34 @@
-# Infinite Swipeable Slider
+# Infinite Carousel
 
-Slider - UI component made in React
+Carousel / Slider - UI component made in React.
 
-Link: [https://golgariet.github.io/infinite-slider-demo/](https://golgariet.github.io/infinite-slider-demo/)
+Link: [https://golgariet.github.io/carousel/](https://golgariet.github.io/carousel/)
 
-This project is a clean WEBPACK/BABEL release.
+This project is a clean WEBPACK/BABEL release of my previous [https://github.com/Golgariet/infinite-slider-demo/tree/master](work) that is bootstrapped with create-react-app. Ready for production if necessary.
 
 ## Usage
 
-In the project directory, you can run:
+In the project directory to start the demo, you can run:
 
 ```bash
-npm start
+npm run start
 ```
 
 Runs the app in the development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3010](http://localhost:3010) to view it in the browser.
 
 The page will reload if you make edits.
 You will also see any lint errors in the console.
 
 ## Slider Features
 
-- Responsive enough (but has some bugs, but solvable)
+- Adaptive ONLY (PC / Mobile)
+- Standard Mode
 - Infinite Mode
-- Indicators
-- Toggle switch
+- Indicators for moving slide to X direction
+- Toggle switch for options
 - Mouse and Touch sensitive
+- Supports HTML content (If required)
 
 ## Contributing
 
